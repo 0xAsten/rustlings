@@ -3,9 +3,8 @@
 // Execute `rustlings hint variables3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
+// Note: the value of a variable must be initialized
 fn main() {
-    let x: i32;
+    let x: i32 = 0;
     println!("Number {}", x);
 }
