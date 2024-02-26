@@ -3,7 +3,7 @@
 // Execute `rustlings hint options3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+// Note: Don't move the owership of Point stored inside y into the match block (p).
 
 struct Point {
     x: i32,
@@ -13,7 +13,8 @@ struct Point {
 fn main() {
     let y: Option<Point> = Some(Point { x: 100, y: 200 });
 
-    match y {
+    // match y {
+    match &y {
         Some(p) => println!("Co-ordinates are {},{} ", p.x, p.y),
         _ => panic!("no match!"),
     }
